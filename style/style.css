@@ -1,223 +1,220 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-  }
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
 
-  body {
-    background-color: #e5e5e5;
-    font-family: 'Roboto', cursive;
-  }
-  
-  body::before {
-    content: "Casa do Hidraulico Paraiso - OS";
-    width: 100%;
-    height: 256px;
-    color:#e5e5e5;
-    background: #09207d;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  body::before{
-    text-align: center;
-    display: flex;
-   padding-top:2rem;
-   justify-content: center;
-   font-size: 38px;
-   font-weight: bold;
-   text-shadow: 2px 1px 1px #09207d;
+body {
+  background-color: #e5e5e5;
+  font-family: "Roboto", cursive;
+}
 
-  }
-  
-  .page {
-    width: 90%;
-    max-width:900px;
-    margin: 0 auto;
-  }
-  header {
-    width: 750px;
-    margin-top: 140px;
-    
-  }
-  header h1 {
-    width: 100%;
-    height: 60px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-  
-  
-  
-    margin-bottom: 18px;
-  }
-  header p {
-    width: 417px;
-    height: 46px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-  
-    color:#535971;
-    margin-bottom: 58px;
-  }
-  form {
-    background-color: #fff;
-    margin-top: 28px;
-    padding: 14px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-   
-    
-    /* min-height: 300px; */
-  }
-  
-  fieldset {
-    border: none;
-    margin-top:31px;
-  }
-  fieldset legend {
-    border-bottom: 1px solid #e6e6f0;
-    width: 100%;
-   
-    /* margin-bottom: 36px; */
-    text-transform: uppercase;
-    
-  }
-  fieldset label{
-      margin:16px ;
-     
-  }
-  #descricao{
-    border: 1px solid #e6e6f0;
-    border-radius: 8px;
-    background-color: #5359711e;
-    resize: none;
-    padding:3px;
-  }
-  fieldset input {
-    height: 56px;
-    margin-top: 8px;
-    padding-left:5px;
-  
-    background: #fafafc;
-    width:100%;
-  
-    border: 1px solid #e6e6f0;
-    border-radius: 8px;
-  }
-  
-  fieldset h2{
-      margin:  32px  auto 12px;
-  }
+body::before {
+  content: "Casa do Hidraulico Paraiso - OS";
+  width: 100%;
+  height: 256px;
+  color: #e5e5e5;
+  background: #09207d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body::before {
+  text-align: center;
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: 2px 1px 1px #09207d;
+}
 
-  .set-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 22px;
-   
-  }
-  .data-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 22px;
-    text-align: center;
-   
-  }
-  
-  .data-wrapper input{
-    text-align: center;
-  }
-  
-  
-  
-  .input-wrapper {
-    
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-top: 16px;
-    
-    
-  }
-  
-  .data-wrapper >.data-field >input{
-   width:300px;
-   margin-right: 12px;
-   transition: 2000ms;
-   
-  }
-  .data-wrapper input{
-    box-sizing: border-box;
-    padding:0 10px;
-   
-  
-  }
-  small, span{
-    font-family:'Roboto';
-    margin-left:5px;
-    font-size: 12px;
-    opacity: 0.4;
-    transition: 2000ms;
-  }
-  small:hover,
-  span:hover{
-    opacity: 1;
-    font-weight: 500;
-  }
-  
-  .container-btn{
-    height:160px ;
-    background-color: #09207d;
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-    margin-bottom: 50px;
-    padding:0 50px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    
-  }
-  
-  .container-btn button{
-    border:2px solid rgb(250, 250, 250);
-    height: 55px;
-    border-radius: 20px;
-    font-family: 'Roboto', cursive;
-    font-weight:400;
-    font-size: 20px;
-    color: #09207d;
-    background-color:white;
-    transition: 2000ms;
-  }
-  
-  .container-btn button:hover{
-     background-color: #41833f;
-     color:white;
-     cursor: pointer;
-  
-  }
-  .pecaServicos{
+.page {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  width: 750px;
+  margin-top: 140px;
+}
+header h1 {
+  width: 100%;
+  height: 60px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+
+  margin-bottom: 18px;
+}
+header p {
+  width: 417px;
+  height: 46px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #535971;
+  margin-bottom: 58px;
+}
+form {
+  background-color: #fff;
+  margin-top: 28px;
+  padding: 14px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  /* min-height: 300px; */
+}
+
+fieldset {
+  border: none;
+  margin-top: 31px;
+}
+fieldset legend {
+  border-bottom: 1px solid #e6e6f0;
+  width: 100%;
+
+  /* margin-bottom: 36px; */
+  text-transform: uppercase;
+}
+fieldset label {
+  margin: 16px;
+}
+#descricao {
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  background-color: #5359711e;
+  resize: none;
+  padding: 3px;
+}
+fieldset input {
+  height: 56px;
+  margin-top: 8px;
+  padding-left: 5px;
+
+  background: #fafafc;
+  width: 100%;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+fieldset h2 {
+  margin: 32px auto 12px;
+}
+
+.set-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 22px;
+  align-items: center;
+}
+.set-wrapper :nth-child(3){
+  max-width: fit-content;
+justify-items: end;
+ 
+}
+.set-wrapper button {
+  background-color: #09207d;
+  height: 56px;
+  border-radius: 12px;
+  color: white;
+  width: 100px;
+  align-self: flex-end;
+ 
+}
+
+.data-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 22px;
+  text-align: center;
+}
+
+.data-wrapper input {
+  text-align: center;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 16px;
+}
+
+.data-wrapper > .data-field > input {
+  width: 300px;
+  margin-right: 12px;
+  transition: 2000ms;
+}
+.data-wrapper input {
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+small,
+span {
+  font-family: "Roboto";
+  margin-left: 5px;
+  font-size: 12px;
+  opacity: 0.4;
+  transition: 2000ms;
+}
+small:hover,
+span:hover {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.container-btn {
+  height: 160px;
+  background-color: #09207d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 0 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.container-btn button {
+  border: 2px solid rgb(250, 250, 250);
+  height: 55px;
+  border-radius: 20px;
+  font-family: "Roboto", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  color: #09207d;
+  background-color: white;
+  transition: 2000ms;
+}
+
+.container-btn button:hover {
+  background-color: #41833f;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .pecaServicos {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  .pecaServicos  .input-wrapper label{
-   font-size: 14px;
+  .pecaServicos .input-wrapper label {
+    font-size: 14px;
   }
 
-
- 
-
-  .pecaServicos .set-wrapper{
-    width:100%;
+  .pecaServicos .set-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -225,6 +222,19 @@
     justify-content: center;
   }
 
-  .pecaServicos .set-wrapper label{
+  .pecaServicos .set-wrapper label {
     margin: 0;
   }
+  .set-wrapper button {
+    background-color: #09207d;
+    height: 56px;
+    border-radius: 12px;
+    color: white;
+    width: 100%;
+    align-self: flex-end;
+  }
+  .set-wrapper :nth-child(3){
+    max-width: 100%;
+    
+  }
+}
