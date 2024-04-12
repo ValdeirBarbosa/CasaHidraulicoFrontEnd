@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adicionar Produtos</title>
+  <link rel="stylesheet" href="./style/form.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <h1>Adicionar Produtos</h1>
+      <p>Preencha o formulário abaixo para adicionar um novo produto.</p>
+    </div>
+   
+    <form id="product-form">
+      <fieldset>
+        <legend>Informações do Produto</legend>
+        <div class="input-wrapper">
+          <label for="codigo">Código:</label>
+          <input type="text" name="codigo" id="codigo" placeholder="Insira o código do produto" required />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="descricao">Descrição:</label>
+          <input type="text" name="descricao" id="descricao" placeholder="Insira a descrição do produto" required />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="quantidade">Quantidade:</label>
+          <input type="number" name="quantidade" id="quantidade" placeholder="Insira a quantidade" required />
+        </div>
+
+        <button type="button" onclick="adicionarProduto()">Adicionar</button>
+        <button onclick="window.location.href='./table.html'">Ver Tabela</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <script>
+    function adicionarProduto() {
+      const codigo = document.getElementById('codigo').value;
+      const descricao = document.getElementById('descricao').value;
+      const quantidade = document.getElementById('quantidade').value;
+
+      if (!codigo || !descricao || !quantidade) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+      }
+
+      const tabela = JSON.parse(localStorage.getItem('tabelaProdutos')) || [];
+      tabela.push({ codigo, descricao, quantidade });
+      localStorage.setItem('tabelaProdutos', JSON.stringify(tabela));
+
+      document.getElementById('codigo').value = '';
+      document.getElementById('descricao').value = '';
+      document.getElementById('quantidade').value = '';
+    }
+  </script>
+</body>
+</html>

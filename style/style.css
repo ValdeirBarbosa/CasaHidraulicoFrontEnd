@@ -7,6 +7,7 @@
 body {
   background-color: #e5e5e5;
   font-family: "Roboto", cursive;
+  
 }
 
 body::before {
@@ -253,4 +254,8 @@ span:hover {
   .input-wrapper-button{
     padding-top: 10px;
   }
+}
+
+container{
+  display: flex;
 }

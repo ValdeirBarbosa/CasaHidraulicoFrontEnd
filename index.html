@@ -1,79 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Ordem de serviço</title>
-  </head>
-  <body>
-    <div class="page">
-      <header>
-        
-      </header>
-      <form id="my-event">
-        <fieldset>
-          <legend>INFORMAÇÕES DO CLIENTE</legend>
-
-          <div class="set-wrapper">
-            <div class="input-wrapper">
-              <label for="nome">Cliente  </label>
-              <input type="text" name="cliente" id="cliente" />
-            </div>
-
-            <div class="input-wrapper">
-              <label for="sobrenome">Telefone </label>
-              <input type="number" name="Telefone" id="Telefone" />
-            </div>
-          </div>
-
-         
-        </fieldset>
-        <fieldset>
-          <legend>INFORMAÇÕES DO SERVIÇO:</legend>
-
-          <div class="set-wrapper">
-            <div class="input-wrapper">
-              <label for="nome"> DESCRIÇÃO:</label>
-             <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
-            </div>
-        </fieldset>
-
-        <fieldset class = "pecaServicos">
-          <legend>Peças e serviços  da Order de Serviço:</legend>
-         
-          <div class="set-wrapper">
-            <div class="input-wrapper">
-              <label for="pecaCod">codigo Peça / Serviço  </label>
-              <input type="text" name="pecaCod" id="pecaCod" />
-            </div>
-
-            <div class="input-wrapper">
-              <label for="pecaDescri">Descrição Peça / serviço </label>
-              <input type="text" name="pecaDescri" id="pecaDescri" />
-              
-            </div>
-            <div class="input-wrapper input-wrapper-button">
-              
-              <Button > + Adicionar</Button>
-              
-            </div>
-          </div>
-          
-            
-           
-          
-         
-        </fieldset>
-      </form>
-      <div class="container-btn">
-        <Button type="submit" form="my-event" value="Submit">OK</Button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ordem de Serviço</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <!-- Aqui você pode adicionar elementos do cabeçalho se necessário -->
+    </header>
+    <div class="left-side">
+      <!-- Aqui você pode adicionar elementos da parte esquerda se necessário -->
     </div>
-  </body>
+    <form id="my-event">
+      <fieldset>
+        <legend>INFORMAÇÕES DO CLIENTE</legend>
+        <div class="set-wrapper">
+          <div class="input-wrapper">
+            <label for="nome">Cliente</label>
+            <input type="text" name="cliente" id="cliente" />
+          </div>
+          <div class="input-wrapper">
+            <label for="sobrenome">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>INFORMAÇÕES DO SERVIÇO:</legend>
+        <div class="input-wrapper">
+          <label for="descricao">Descrição:</label>
+          <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+    </form>
+    <div class="container-btn">
+      <button onclick="window.location.href='./form.html'">Avançar</button>
+    </div>
+  </div>
+</body>
 </html>
